@@ -1,1 +1,1 @@
-# ets-ocp-s2i
+# ETS s2i for OpenShift Container Platform
