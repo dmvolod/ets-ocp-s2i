@@ -7,7 +7,7 @@
 
 set -e
 
-./pre-assemble
+$STI_SCRIPTS_PATH/pre-assemble
 
 # FIXME: Linking of global modules is disabled for now as it causes npm failures
 #        under RHEL7
