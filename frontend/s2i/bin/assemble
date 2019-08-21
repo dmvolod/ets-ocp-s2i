@@ -8,6 +8,7 @@
 set -e
 
 echo "Changing settings from ConfigMap..."
+cp ./config/config.ts /tmp/src/src/
 
 # FIXME: Linking of global modules is disabled for now as it causes npm failures
 #        under RHEL7
