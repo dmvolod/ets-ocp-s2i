@@ -1,6 +1,6 @@
 #!/bin/bash
 
-STI_TMP_SCRIPT_PATH=/tmp/scripts
+STI_TMP_SCRIPTS_PATH=/tmp/scripts
 # Prevent running assemble in builders different than official STI image.
 # The official nodejs:8-onbuild already run npm install and use different
 # application folder.
