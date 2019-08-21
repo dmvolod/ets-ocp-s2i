@@ -7,7 +7,10 @@
 
 set -e
 
-ls -la
+pwd
+ls -la /tmp/scripts/
+ls -la /usr/libexec/s2i/
+
 /tmp/scripts/pre-assemble
 
 # FIXME: Linking of global modules is disabled for now as it causes npm failures
