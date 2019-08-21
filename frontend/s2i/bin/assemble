@@ -1,6 +1,5 @@
 #!/bin/bash
 
-STI_TMP_SCRIPTS_PATH=/tmp/scripts
 # Prevent running assemble in builders different than official STI image.
 # The official nodejs:8-onbuild already run npm install and use different
 # application folder.
@@ -8,7 +7,7 @@ STI_TMP_SCRIPTS_PATH=/tmp/scripts
 
 set -e
 
-$STI_TMP_SCRIPTS_PATH/pre-assemble
+/tmp/scripts/pre-assemble
 
 # FIXME: Linking of global modules is disabled for now as it causes npm failures
 #        under RHEL7
