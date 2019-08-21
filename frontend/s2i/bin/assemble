@@ -7,6 +7,7 @@
 
 set -e
 
+ls -la
 /tmp/scripts/pre-assemble
 
 # FIXME: Linking of global modules is disabled for now as it causes npm failures
