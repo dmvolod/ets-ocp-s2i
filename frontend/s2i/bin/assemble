@@ -8,7 +8,7 @@
 set -e
 
 echo "Changing settings with sed..."
-sed -i 's/dev2-ets.gost-group.com/ets-backend:8080/g' /tmp/src/src/config.ts
+sed -i 's/dev2-ets.gost-group.com/ets-backend-jkh-kkets.apps.openshift.passport.local/g' /tmp/src/src/config.ts
 
 # FIXME: Linking of global modules is disabled for now as it causes npm failures
 #        under RHEL7
