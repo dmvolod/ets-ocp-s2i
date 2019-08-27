@@ -1,4 +1,4 @@
-FROM registry.redhat.io/rhscl/postgresql-96-rhel7
+FROM registry.access.redhat.com
 
 # PostgreSQL image for OpenShift.
 # Volumes:
