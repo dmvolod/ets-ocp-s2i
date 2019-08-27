@@ -85,5 +85,5 @@ USER 26
 ENTRYPOINT ["container-entrypoint"]
 CMD ["run-postgresql"]
 
-ADD help.1 /help.1
+#ADD help.1 /help.1
 LABEL "authoritative-source-url"="registry.access.redhat.com" "distribution-scope"="public" "vendor"="Red Hat, Inc." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/rhscl/postgresql-96-rhel7/images/1-37" "vcs-type"="git" "architecture"="x86_64" "release"="37" "build-date"="2019-03-06T11:07:35.249156" "com.redhat.build-host"="cpt-0011.osbs.prod.upshift.rdu2.redhat.com" "vcs-ref"="bc657f6950e7cb8089e6df3a55fb30f9d1cc611b"
