@@ -37,7 +37,7 @@ LABEL summary="$SUMMARY" \
 
 EXPOSE 5432
 
-ADD fix-permissions root/usr/libexec/fix-permissions
+ADD fix-permissions /root/fix-permissions
 
 COPY root/usr/libexec/fix-permissions /usr/libexec/fix-permissions
 
