@@ -57,6 +57,7 @@ RUN yum install -y wget yum-utils gettext && \
     mkdir -p /var/lib/pgsql/data && \
     /usr/libexec/fix-permissions /var/lib/pgsql && \
     /usr/libexec/fix-permissions /var/run/postgresql
+RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm    
 RUN yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm 
 RUN yum install -y geos postgis
 # Get prefix path and path to scripts rather than hard-code them in scripts
