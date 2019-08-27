@@ -42,7 +42,7 @@ COPY root/usr/libexec/fix-permissions /usr/libexec/fix-permissions
 # to make sure of that.
 # rhel-7-server-ose-3.2-rpms is enabled for nss_wrapper until this pkg is
 # in base RHEL
-RUN yum install -y yum-utils gettext && \
+RUN yum install -y wget yum-utils gettext && \
     prepare-yum-repositories rhel-server-rhscl-7-rpms && \
     INSTALL_PKGS="rsync tar gettext bind-utils nss_wrapper rh-postgresql96 rh-postgresql96-postgresql-contrib rh-postgresql95-postgresql-server" && \
     yum -y --setopt=tsflags=nodocs install $INSTALL_PKGS && \
@@ -53,7 +53,8 @@ RUN yum install -y yum-utils gettext && \
     mkdir -p /var/lib/pgsql/data && \
     /usr/libexec/fix-permissions /var/lib/pgsql && \
     /usr/libexec/fix-permissions /var/run/postgresql
-
+RUN yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm 
+RUN yum install -y geos postgis
 # Get prefix path and path to scripts rather than hard-code them in scripts
 ENV CONTAINER_SCRIPTS_PATH=/usr/share/container-scripts/postgresql \
     ENABLED_COLLECTIONS=rh-postgresql96
