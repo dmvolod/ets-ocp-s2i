@@ -64,8 +64,8 @@ RUN yum install -y geos postgis
 ENV CONTAINER_SCRIPTS_PATH=/usr/share/container-scripts/postgresql \
     ENABLED_COLLECTIONS=rh-postgresql96
 
-COPY root /
-COPY ./s2i/bin/ $STI_SCRIPTS_PATH
+#COPY root /
+#COPY ./s2i/bin/ $STI_SCRIPTS_PATH
 
 # When bash is started non-interactively, to run a shell script, for example it
 # looks for this variable and source the content of this file. This will enable
