@@ -1,4 +1,4 @@
-FROM sha256:28412bbb43bb02996e8cf1e2df6a1e00728cef660b4967125a766b6a9bf5f74b
+FROM registry.redhat.io/rhscl/postgresql-96-rhel7
 
 # PostgreSQL image for OpenShift.
 # Volumes:
