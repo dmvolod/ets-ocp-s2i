@@ -37,9 +37,9 @@ LABEL summary="$SUMMARY" \
 
 EXPOSE 5432
 
-ADD fix-permissions /root/fix-permissions
+ADD fix-permissions /usr/libexec/fix-permissions
+RUN chmod -v +x /usr/libexec/fix-permissions
 
-COPY /root /usr/libexec/
 
 # This image must forever use UID 26 for postgres user so our volumes are
 # safe in the future. This should *never* change, the last test is there
